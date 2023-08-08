@@ -60,13 +60,19 @@ body{
 }
 
 .sidebar .links {
+    height: calc(100% - 140px);
+    overflow-y: auto;
+    scrollbar-width: none;
     list-style: none;
     margin-top: 7px;
 }
-
+ 
 .sidebar .links h4 {
     color: #222;
     font-weight: 500;
+    display: none;
+}
+.sidebar .links::-webkit-scrollbar {
     display: none;
 }
 
@@ -76,6 +82,11 @@ body{
 
 .links hr {
     border-color: #4c4c4c;
+    margin: 10px 8px;
+}
+
+.sidebar:hover .links hr {
+    border-color: transparent;
 }
 
 .links li {
