@@ -43,7 +43,7 @@ body{
 }
 
 .sidebar:hover .logo h2 {
-  
+   display: block;
 }
 
 .logo img{
@@ -55,6 +55,7 @@ body{
     font-weight: 600;   
     font-size: 1.15rem;
     margin-left: 15px;
+    display: none;
    
 }
 
@@ -66,6 +67,15 @@ body{
 .sidebar .links h4 {
     color: #222;
     font-weight: 500;
+    display: none;
+}
+
+.sidebar:hover .links h4 {
+    display: block;
+}
+
+.links hr {
+    border-color: #4c4c4c;
 }
 
 .links li {
@@ -85,9 +95,15 @@ body{
     font-weight: 500;
     white-space: nowrap;
     text-decoration: none;
+    display: none;
 }
 
 .links li span {
     padding: 5px 10px ;
 }
+
+.sidebar:hover .links li a{
+    display: block;
+}  
+
 
